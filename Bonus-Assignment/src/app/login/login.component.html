@@ -1,0 +1,21 @@
+
+
+
+<div class="container">
+    <h2>This is the Login component</h2>
+    <h2>Form control: input</h2>
+    <p>The form below contains two input elements; one of type text and one of type password:</p>
+    <form>
+      <div class="form-group">
+        <label for="username">Name:</label>
+        <input type="text" class="form-control" name="username" [(ngModel)]="username"/>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" name="password" [(ngModel)]="password">
+      </div>
+      <input type="submit" class="btn btn-info" value="Login" (click)="LoginUser()">
+
+    </form>
+  </div>
+  
